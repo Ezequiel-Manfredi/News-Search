@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes, Link, useHref } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes, Link } from 'react-router-dom'
 import ErrorPage from './pages/ErrorPage'
 import SearchPage from './pages/SearchPage'
 

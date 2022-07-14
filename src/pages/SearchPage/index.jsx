@@ -1,6 +1,6 @@
 import { useSearchParams } from 'react-router-dom'
-import NoticeList from '../../components/NoticeList'
-import NoticeSearch from '../../components/NoticeSearch'
+import NewsList from '../../components/NewsList'
+import NewsSearch from '../../components/NewsSearch'
 
 export default function SearchPage() {
     const [queryParams] = useSearchParams()
@@ -9,8 +9,8 @@ export default function SearchPage() {
 
     return (
         <main>
-            <NoticeSearch word={word} />
-            <NoticeList word={word} page={page} />
+            <NewsSearch word={word} />
+            <NewsList word={word} page={page} />
         </main>
     )
 }

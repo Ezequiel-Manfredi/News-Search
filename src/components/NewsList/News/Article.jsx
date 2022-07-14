@@ -1,4 +1,4 @@
-export default function Notice({ title, urlToImage, url, source, publishedAt, description }) {
+export default function Article({ title, urlToImage, url, source, publishedAt, description }) {
     let dateObj = new Date(publishedAt)
     let date = dateObj.toLocaleDateString('es-AR').replaceAll('/','-')
     let time = dateObj.toLocaleTimeString('es-AR', {hour: '2-digit', minute: '2-digit'})

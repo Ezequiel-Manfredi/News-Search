@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export default function NoticeSearch({ word }) {
+export default function NewsSearch({ word }) {
     const [search, setSearch] = useState(word)
     const [isValid, setIsValid] = useState(word.length > 2)
     const navigate = useNavigate()
