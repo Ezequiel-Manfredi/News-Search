@@ -11,19 +11,21 @@ export default function NewsList({ word, page }) {
 
     useEffect(() => {
         setLoad(true)
-        const query = getDataAPI(word, page)
-        query.then(res => {
-            if (res.status === 'ok') {
-                setNews(res.articles)
-                setTotalResults(res.totalResults)
-            } else {
-                setNews(null)
-            }
-            setLoad(false)
-        }).catch(rej => console.error(rej))
+        if(word) {
+            const query = getDataAPI(word, page)
+            query.then(res => {
+                if (res.status === 'ok') {
+                    setNews(res.articles)
+                    setTotalResults(res.totalResults)
+                } else {
+                    setNews(null)
+                }
+                setLoad(false)
+            }).catch(rej => console.error(rej))
+        }
     }, [word, page])
 
-    if (!word || !page) return null
+    if (!word) return null
 
     if (load || !news || news.length === 0) return <Loading load={load} />
 
