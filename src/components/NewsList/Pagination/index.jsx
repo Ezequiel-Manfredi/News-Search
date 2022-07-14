@@ -1,32 +1,17 @@
-import { useNavigate } from 'react-router-dom'
+import PageButton from './PageButton'
 
 export default function Pagination({ maxPage, page, word }) {
-    const navigate = useNavigate()
-    maxPage = maxPage>10 ? 10 : maxPage // api restringido hasta 10 paginas
-    const pages = {
-        '&lt;&lt;': 1,
-        '&gt;&gt;': maxPage
-    }
-
-    const handleClick = e => {
-        const pageNum = pages[e.target.innerHTML] || e.target.innerHTML
-        navigate(`/search?page=${pageNum}&word=${word}`)
-    }
-
-    const pageList = ['<<', page - 1, page, page + 1, '>>'].map((p, i) => {
-        if ((p !== 0 && p <= maxPage) || i === 0 || i === 4) {
-            return (
-                <li key={i}>
-                    <button onClick={handleClick}>{p}</button>
-                </li>
-            )
-        }
-        return null
-    })
+    maxPage = maxPage>10 ? 10 : maxPage // paginado de api restringido hasta 10 paginas
+    let prevPage = page-1==0 ? null : page-1
+    let nextPage = page+1>maxPage ? null : page+1
 
     return (
         <ul>
-            {pageList}
+            <PageButton value={'<<'} url={`/search?page=${1}&word=${word}`} />
+            <PageButton value={prevPage} url={`/search?page=${page-1}&word=${word}`} />
+            <PageButton value={page} url={`/search?page=${page}&word=${word}`} />
+            <PageButton value={nextPage} url={`/search?page=${page+1}&word=${word}`} />
+            <PageButton value={'>>'} url={`/search?page=${maxPage}&word=${word}`} />
         </ul>
     )
 }
