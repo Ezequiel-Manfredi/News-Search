@@ -17,7 +17,7 @@ export default function NewsSearch({ word }) {
     }
 
     return (
-        <form>
+        <form role={'search-form'}>
             <input type="search" placeholder='Palabra Clave' value={search} onChange={handleChange} />
             <button type="submit" disabled={!isValid} onClick={handleClick}>
                 Buscar
