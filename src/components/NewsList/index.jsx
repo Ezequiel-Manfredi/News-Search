@@ -20,12 +20,12 @@ export default function NewsList({ word, page }) {
                     setNews(res.articles)
                     setTotalResults(res.totalResults)
                     if (res.totalResults === 0) setException('parameterNotFound')
-                } else if (res.status === 'error') {
+                } else {
                     setNews(null)
                     setException(res.code)
                 }
                 setLoad(false)
-            }).catch(rej => console.error(rej))
+            })
         }
     }, [word, page])
 
@@ -36,7 +36,7 @@ export default function NewsList({ word, page }) {
     if (!news || news.length === 0) return <Exception message={exception} />
 
     return (
-        <section>
+        <section role={'news-list'}>
             <p>Está viendo {news.length} noticias de {totalResults} resultados</p>
             <News news={news} />
             <Pagination maxPage={Math.ceil(totalResults / 10)} word={word} page={parseInt(page)} />
