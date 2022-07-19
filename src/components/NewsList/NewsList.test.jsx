@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import NewsList from './index'
-import { NEWS_STUB, NOT_NEWS_STUB, ERROR_API_STUB } from './mockApiResponse'
-import { waitFor, render, screen, cleanup } from '@testing-library/react'
+import { NEWS_STUB, NOT_NEWS_STUB, ERROR_API_STUB, NEWS2_STUB } from './mockApiResponse'
+import { waitFor, render, screen, cleanup, fireEvent } from '@testing-library/react'
 import { act } from 'react-dom/test-utils'
 
 const originalError = console.error
@@ -81,5 +81,29 @@ describe('<NewsList/>', () => {
         expect(newsList).not.toBeInTheDocument()
         const message = screen.getByText('No has ingresado ninguna palabra clave')
         expect(message).toBeInTheDocument()
+    })
+
+    test('la paginacion maxima debe ser 10 aunque pueda haber mas',async () => {
+        const stubFetch = jest.fn().mockResolvedValue({
+            json: jest.fn().mockResolvedValue(NEWS2_STUB)
+        })
+        global.fetch = stubFetch
+
+        await act(async () => {
+            render(<NewsList word={'casa'} page={1} />)
+        })
+        const paginationButton = screen.getByText('10',{ selector: 'button' })
+        expect(paginationButton).toBeInTheDocument()
+    })
+
+    test('Al presionar algun boton de la paginacion debe redirigir la pagina web',async () => {
+        await act(async () => {
+            render(<NewsList word={'javascript'} page={1} />)
+        })
+        const paginationButton = screen.getByText('2',{ selector: 'button' })
+        act(() => {
+            fireEvent.click(paginationButton)
+            expect(mockUseNavigate).toBeCalled()
+        })
     })
 })

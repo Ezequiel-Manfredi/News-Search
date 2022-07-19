@@ -132,6 +132,142 @@ export const NEWS_STUB = {
         "content": "Ya sea para jugar o para conseguir tener una mejor experiencia en programas avanzados, siempre se está buscando el máximo rendimiento posible. Ante estas situaciones, hay que saber que tanto Windows … [+3090 chars]"
     }]
 }
+export const NEWS2_STUB = {
+    "status": "ok",
+    "totalResults": 25426,
+    "articles": [
+    {
+        "source": {
+            "id": null,
+            "name": "Hipertextual"
+        },
+        "author": "Hipertextual (Redacción)",
+        "title": "Los mejores accesorios para la casa conectada en oferta por el Prime Day",
+        "description": "Si estás empezando a montar tu propia casa inteligente, hemos recopilado los mejores productos con descuento aprovechando El Prime Day de Amazon. Sin duda, de todas las grandes marcas, Philips Hue sigue siendo la más recomendable en cuanto a fiabilidad y a fu…",
+        "url": "https://hipertextual.com/2022/07/los-mejores-accesorios-para-la-casa-conectada-en-oferta-por-el-prime-day",
+        "urlToImage": "https://imgs.hipertextual.com/wp-content/uploads/2020/02/hipertextual-apple-quiere-que-tu-casa-se-configure-sola-2020747483.jpg",
+        "publishedAt": "2022-07-12T11:09:41Z",
+        "content": "Si estás empezando a montar tu propia casa inteligente, hemos recopilado los mejores productos con descuento aprovechando El Prime Day de Amazon. Sin duda, de todas las grandes marcas, Philips Hue si… [+2895 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Hipertextual"
+        },
+        "author": "Tomás Rivero",
+        "title": "Netflix ahora quiere cobrarte por cada casa donde compartes tu cuenta",
+        "description": "Hace apenas unos meses, Netflix confirmaba medidas para atacar la práctica de compartir contraseñas entre sus usuarios. Para comenzar, iniciaron una prueba en Chile, Costa Rica y Perú. Ahora, sin embargo, anunciaron que llevarán a cabo un segundo test con un …",
+        "url": "https://hipertextual.com/2022/07/netflix-prueba-cobrar-casa-compartir-cuenta",
+        "urlToImage": "https://imgs.hipertextual.com/wp-content/uploads/2022/03/Netflix-rusia-1.jpg",
+        "publishedAt": "2022-07-18T23:02:07Z",
+        "content": "Hace apenas unos meses, Netflix confirmaba medidas para atacar la práctica de compartir contraseñas entre sus usuarios. Para comenzar, iniciaron una prueba en Chile, Costa Rica y Perú. Ahora, sin emb… [+2462 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Hipertextual"
+        },
+        "author": "César Noragueda",
+        "title": "‘La casa de papel: Corea’ es un malísimo reflejo de la serie original",
+        "description": "Con la adecuada perspectiva, resulta bastante impresionante hasta dónde ha llevado Netflix a una serie televisiva española como La casa de papel (2017-2021), que probablemente solo habríamos disfrutado en este país si la compañía de streaming no hubiese decid…",
+        "url": "http://hipertextual.com/2022/06/la-casa-de-papel-corea-critica-netflix",
+        "urlToImage": "https://newspack-hipertextual.s3.amazonaws.com/wp-content/uploads/2022/06/la_casa_de_papel_corea_kim_hong_seon.jpg",
+        "publishedAt": "2022-06-23T13:09:35Z",
+        "content": "Con la adecuada perspectiva, resulta bastante impresionante hasta dónde ha llevado Netflix a una serie televisiva española como La casa de papel (2017-2021), que probablemente solo habríamos disfruta… [+4778 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Hipertextual"
+        },
+        "author": "Gabriel Erard",
+        "title": "Por qué no puedes escanear, fotocopiar o imprimir billetes en tu casa",
+        "description": "¿Cómo sería el mundo si cada uno de nosotros pudiese imprimir su propio dinero? Muy caótico, con seguridad. El dinero fácil no existe, eso está más que claro. Y si bien existen métodos de falsificación cada vez más complejos, ninguno es lo suficientemente ava…",
+        "url": "http://hipertextual.com/2022/06/por-que-no-puedes-escanear-imprimir-fotocopiar-billetes",
+        "urlToImage": "https://newspack-hipertextual.s3.amazonaws.com/wp-content/uploads/2022/06/jason-leung-SAYzxuS1O3M-unsplash-scaled.jpg",
+        "publishedAt": "2022-06-23T21:39:00Z",
+        "content": "¿Cómo sería el mundo si cada uno de nosotros pudiese imprimir su propio dinero? Muy caótico, con seguridad. El dinero fácil no existe, eso está más que claro. Y si bien existen métodos de falsificaci… [+13257 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Hipertextual"
+        },
+        "author": "Hipertextual (Redacción)",
+        "title": "Una bestia para no quedarte sin energía en casa: la estación de carga BLUETTI EP500 Pro llega a Europa",
+        "description": "En el mes de marzo del año pasado, 2021 BLUETTI, la compañía de energía renovable y que ha alcanzado gran popularidad en todo el mundo gracias a sus estaciones de carga y paneles solares, empezó una ronda de financiación en kickstarter para poder desarrollar …",
+        "url": "https://hipertextual.com/2022/07/bluetti-ep500-pro-europa",
+        "urlToImage": "https://i0.wp.com/newspack-hipertextual.s3.amazonaws.com/wp-content/uploads/2022/06/BLUETTI-EP500PRO-scaled.jpg?fit=2560%2C1485&quality=50&strip=all&ssl=1",
+        "publishedAt": "2022-07-01T07:00:00Z",
+        "content": "En el mes de marzo del año pasado, 2021 BLUETTI, la compañía de energía renovable y que ha alcanzado gran popularidad en todo el mundo gracias a sus estaciones de carga y paneles solares, empezó una … [+3257 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Genbeta.com"
+        },
+        "author": "José Alberto Lizana",
+        "title": "Qué es la referencia catastral de una casa y cómo saber la de tu casa por Internet",
+        "description": "A la hora de querer saber el valor de una vivienda, lo más normal es dar una dirección con la calle, el número y el municipio. Pero para la administración con esto no es suficiente, ya que pueden existir confusiones. Es por ello que en España cada vivienda cu…",
+        "url": "https://www.genbeta.com/paso-a-paso/que-referencia-catastral-casa-como-saber-tu-casa-internet",
+        "urlToImage": "https://i.blogs.es/f9b1f2/catastro/840_560.jpg",
+        "publishedAt": "2022-06-30T15:41:34Z",
+        "content": "A la hora de querer saber el valor de una vivienda, lo más normal es dar una dirección con la calle, el número y el municipio. Pero para la administración con esto no es suficiente, ya que pueden exi… [+4353 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Hipertextual"
+        },
+        "author": "Azucena Martín",
+        "title": "Tres consejos para proteger a tu perro del Sol en la playa",
+        "description": "Con esta ola de calor que se nos viene encima, lo que más apetece es encerrarse en casa con el aire acondicionado. No obstante, también son días de ir a la playa o la piscina. Podemos hacerlo solos o en compañía, animal o humana. De hecho, quienes tienen perr…",
+        "url": "https://hipertextual.com/2022/07/consejos-proteger-perro-sol-playa",
+        "urlToImage": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/07/greg-jenkins-Y23MeOF5ExY-unsplash-scaled.jpg?fit=2560%2C1920&quality=50&strip=all&ssl=1",
+        "publishedAt": "2022-07-12T16:01:00Z",
+        "content": "Con esta ola de calor que se nos viene encima, lo que más apetece es encerrarse en casa con el aire acondicionado. No obstante, también son días de ir a la playa o la piscina. Podemos hacerlo solos o… [+4080 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Xataka.com"
+        },
+        "author": "Javier Marquez",
+        "title": "Netflix prueba en algunos países cobrar más para usar la cuenta en otra casa",
+        "description": "En marzo de este año, Netflix anunció que iba a empezar a cobrar por compartir la cuenta en algunos países. Ahora, el gigante del streaming está dando otro paso en favor de su plan para evitar que los usuarios compartan la contraseña con quienes no pagan por …",
+        "url": "https://www.xataka.com/streaming/netflix-prueba-algunos-paises-cobrar-para-usar-cuenta-otra-casa",
+        "urlToImage": "https://i.blogs.es/30f65d/thibault-penin-grzokn1aqsg-unsplash/840_560.jpeg",
+        "publishedAt": "2022-07-18T21:33:24Z",
+        "content": "En marzo de este año, Netflix anunció que iba a empezar a cobrar por compartir la cuenta en algunos países. Ahora, el gigante del streaming está dando otro paso en favor de su plan para evitar que lo… [+2737 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Xataka.com"
+        },
+        "author": "John Tones",
+        "title": "Netflix ha encontrado en 'La casa de papel: Corea' algo que necesitaba urgentemente: una franquicia",
+        "description": "'La Casa de Papel: Corea' se ha convertido en el nuevo éxito (no demasiado sorprendente, por otra parte) de Netflix. Aunque todavía es pronto para ver cómo se posiciona en el Top Global de la última semana (ya que se estrenó hace solo unos días, y donde por c…",
+        "url": "https://www.xataka.com/streaming/netflix-ha-encontrado-casa-papel-corea-algo-que-necesitaba-urgentemente-franquicia",
+        "urlToImage": "https://i.blogs.es/327e5b/omief72akbd2djtdxja72k6sxq/840_560.jpeg",
+        "publishedAt": "2022-06-27T15:30:55Z",
+        "content": "'La Casa de Papel: Corea' se ha convertido en el nuevo éxito (no demasiado sorprendente, por otra parte) de Netflix. Aunque todavía es pronto para ver cómo se posiciona en el Top Global de la última … [+4448 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Xataka.com"
+        },
+        "author": "Antonio Vallejo",
+        "title": "HP Envy Inspire 7920e, análisis: una gigantesca impresora multifunción para tener la oficina en casa",
+        "description": "Aunque es cierto que las impresoras, fuera del ámbito empresarial y administrativo, han perdido peso, firmas como HP siguen ofreciendo soluciones dentro de este campo a nivel de usuario. La compañía tiene un gran bagaje en lo que respecta a equipos de impresi…",
+        "url": "https://www.xataka.com/analisis/hp-envy-inspire-7920e-analisis-caracteristicas-precio-especificaciones",
+        "urlToImage": "https://i.blogs.es/f514d6/hp-8-/840_560.jpg",
+        "publishedAt": "2022-07-02T10:31:15Z",
+        "content": "Aunque es cierto que las impresoras, fuera del ámbito empresarial y administrativo, han perdido peso, firmas como HP siguen ofreciendo soluciones dentro de este campo a nivel de usuario. La compañía … [+10749 chars]"
+    }
+    ]
+}
 export const NOT_NEWS_STUB = {
     "status": "ok",
     "totalResults": 0,
