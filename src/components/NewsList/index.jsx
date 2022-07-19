@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Box, Alert, CircularProgress } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
+import { Box, Alert, CircularProgress, Pagination } from '@mui/material'
 import News from './News'
-import Pagination from './Pagination'
 import getDataAPI from '../../services/getDataAPI'
 import Exception from '../Exception'
 
@@ -10,6 +10,11 @@ export default function NewsList({ word, page }) {
     const [exception, setException] = useState('')
     const [news, setNews] = useState(null)
     const [totalResults,setTotalResults] = useState(0)
+    const navigate = useNavigate()
+
+    const handlePagination = (_evt,page) => {
+        navigate(`/search?page=${page}&word=${word}`)
+    }
 
     useEffect(() => {
         setLoad(true)
@@ -35,13 +40,14 @@ export default function NewsList({ word, page }) {
 
     if (!news || news.length === 0) return <Exception message={exception} />
 
+    let maxPage = Math.ceil(totalResults / 10)
     return (
         <Box component='section' role={'news-list'}>
             <Alert severity="info">
                 Está viendo {news.length} noticias de {totalResults} resultados
             </Alert>
             <News news={news} />
-            <Pagination maxPage={Math.ceil(totalResults / 10)} word={word} page={parseInt(page)} />
+            <Pagination count={maxPage>10 ? 10 : maxPage} page={parseInt(page)} onChange={handlePagination} showFirstButton showLastButton hidePrevButton hideNextButton className='' />
         </Box>
     )
 }
