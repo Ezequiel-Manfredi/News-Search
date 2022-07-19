@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Box, Alert } from '@mui/material'
 import Loading from '../Loading'
 import News from './News'
 import Pagination from './Pagination'
@@ -36,10 +37,12 @@ export default function NewsList({ word, page }) {
     if (!news || news.length === 0) return <Exception message={exception} />
 
     return (
-        <section role={'news-list'}>
-            <p>Está viendo {news.length} noticias de {totalResults} resultados</p>
+        <Box component='section' role={'news-list'}>
+            <Alert severity="info">
+                Está viendo {news.length} noticias de {totalResults} resultados
+            </Alert>
             <News news={news} />
             <Pagination maxPage={Math.ceil(totalResults / 10)} word={word} page={parseInt(page)} />
-        </section>
+        </Box>
     )
 }

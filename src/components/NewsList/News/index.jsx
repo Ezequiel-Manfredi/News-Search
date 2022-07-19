@@ -1,3 +1,4 @@
+import { Stack } from '@mui/material'
 import Article from './Article'
 
 export default function News({ news }) {
@@ -6,8 +7,8 @@ export default function News({ news }) {
     )
 
     return (
-        <ul>
+        <Stack component='ul' spacing={4} className='sm:w-[70%] m-auto mx-auto py-8'>
             {newslist}
-        </ul>
+        </Stack>
     )
 }

@@ -8,9 +8,9 @@ export default function SearchPage() {
     const word = queryParams.get('word') || ''
 
     return (
-        <main>
+        <>
             <NewsSearch word={word} />
             <NewsList word={word} page={page} />
-        </main>
+        </>
     )
 }

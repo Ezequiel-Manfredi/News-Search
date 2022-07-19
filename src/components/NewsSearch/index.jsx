@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { TextField, Button, Box } from '@mui/material'
 
 export default function NewsSearch({ word }) {
     const [search, setSearch] = useState(word)
@@ -17,11 +18,9 @@ export default function NewsSearch({ word }) {
     }
 
     return (
-        <form role={'search-form'}>
-            <input type="search" placeholder='Palabra Clave' value={search} onChange={handleChange} />
-            <button type="submit" disabled={!isValid} onClick={handleClick}>
-                Buscar
-            </button>
-        </form>
+        <Box role={'search-form'} component="form" className='flex flex-col w-full justify-center items-center gap-2'>
+            <TextField value={search} onChange={handleChange} required type="search" variant="outlined" label="Palabra Clave" className='w-[80%] sm:w-[60%] md:w-[40%] lg:w-[30%]'/>
+            <Button disabled={!isValid} onClick={handleClick} variant="contained" type="submit" className='w-[50%] sm:w-[40%] md:w-[30%] lg:w-[20%]'>Buscar</Button>
+        </Box>
     )
 }
