@@ -1,3 +1,5 @@
+import { Box, Alert } from '@mui/material'
+
 export default function Exception({ message }) {
     const errors = {
         'parametersMissing': 'No has ingresado ninguna palabra clave',
@@ -5,8 +7,10 @@ export default function Exception({ message }) {
     }
 
     return (
-        <section>
-            <h2>{errors[message]}</h2>
-        </section>
+        <Box component='section'>
+            <Alert severity="error">
+                {errors[message]}
+            </Alert>
+        </Box>
     )
 }
