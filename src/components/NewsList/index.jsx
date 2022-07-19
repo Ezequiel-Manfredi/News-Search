@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Box, Alert } from '@mui/material'
-import Loading from '../Loading'
+import { Box, Alert, CircularProgress } from '@mui/material'
 import News from './News'
 import Pagination from './Pagination'
 import getDataAPI from '../../services/getDataAPI'
@@ -32,7 +31,7 @@ export default function NewsList({ word, page }) {
 
     if (!word) return null
 
-    if (load) return <Loading />
+    if (load) return <CircularProgress role={'spinner'}/>
 
     if (!news || news.length === 0) return <Exception message={exception} />
 
