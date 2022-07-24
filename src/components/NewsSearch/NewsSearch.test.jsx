@@ -18,6 +18,7 @@ describe('<NewsSearch />', () => {
         expect(search).toBeInTheDocument()
     })
 
+    // ACLARACION: este test y el siguiente son dependientes uno del otro, no cambiar de orden
     test('No se puede apretar el boton de buscar cuando hay menos de 3 caracteres en el input', () => {
         render(<NewsSearch word={''} />)
         const search = screen.getByRole('search-form')
