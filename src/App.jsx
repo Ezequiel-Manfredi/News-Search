@@ -7,7 +7,7 @@ export default function App() {
     return (
         <BrowserRouter>
             <Box component='header' className='max-w-[100vw] h-[10vh] border-b'>
-                <Link to={"/"} className='flex justify-center items-center gap-4'>
+                <Link to={"/"} className='flex justify-center items-center gap-4 w-[10%] m-auto text-center'>
                     <img src="/news-icon.svg" className='h-[10vh]'/>
                     <Typography variant='button' component='p'>
                         News Search
