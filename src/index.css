@@ -5,3 +5,8 @@
 input::-webkit-search-cancel-button {
     cursor: pointer;
 }
+
+nav > ul {
+    justify-content: center;
+    align-items: center;
+}

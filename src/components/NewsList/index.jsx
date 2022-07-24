@@ -47,7 +47,15 @@ export default function NewsList({ word, page }) {
                 Está viendo {news.length} noticias de {totalResults} resultados
             </Alert>
             <News news={news} />
-            <Pagination count={maxPage>10 ? 10 : maxPage} page={parseInt(page)} onChange={handlePagination} showFirstButton showLastButton hidePrevButton hideNextButton className='' />
+            <Pagination 
+                count={maxPage>10 ? 10 : maxPage} 
+                page={parseInt(page)} 
+                onChange={handlePagination} 
+                showFirstButton showLastButton 
+                hidePrevButton hideNextButton 
+                size="large"
+                color="primary"
+            />
         </Box>
     )
 }
