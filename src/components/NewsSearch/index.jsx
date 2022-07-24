@@ -19,8 +19,22 @@ export default function NewsSearch({ word }) {
 
     return (
         <Box role={'search-form'} component="form" className='flex flex-col w-full justify-center items-center gap-2'>
-            <TextField value={search} onChange={handleChange} required type="search" variant="outlined" label="Palabra Clave" className='w-[80%] sm:w-[60%] md:w-[40%] lg:w-[30%]'/>
-            <Button disabled={!isValid} onClick={handleClick} variant="contained" type="submit" className='w-[50%] sm:w-[40%] md:w-[30%] lg:w-[20%]'>Buscar</Button>
+            <TextField 
+                value={search} 
+                onChange={handleChange} 
+                required type="search" 
+                variant="outlined" 
+                label="Palabra Clave" 
+                autoComplete="off"
+                className='w-[80%] sm:w-[60%] md:w-[40%] lg:w-[30%]'
+            />
+            <Button 
+                disabled={!isValid} 
+                onClick={handleClick} 
+                variant="contained" 
+                type="submit" 
+                className='w-[50%] sm:w-[40%] md:w-[30%] lg:w-[20%]'
+            >Buscar</Button>
         </Box>
     )
 }
