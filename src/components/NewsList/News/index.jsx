@@ -7,7 +7,7 @@ export default function News({ news }) {
     )
 
     return (
-        <Stack component='ul' spacing={4} className='sm:w-[70%] m-auto mx-auto py-8'>
+        <Stack component='ul' spacing={4} className='sm:w-[70%] sm:mx-auto py-8'>
             {newslist}
         </Stack>
     )

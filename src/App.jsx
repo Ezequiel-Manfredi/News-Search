@@ -16,7 +16,11 @@ export default function App() {
             </Box>
             <Box 
                 component='main' 
-                className='max-w-[100vw] min-h-[80vh] flex flex-col gap-6 p-8 justify-center items-center'
+                className={`
+                    max-w-[100vw] min-h-[80vh] 
+                    flex flex-col gap-6 px-2 py-8 
+                    sm:p-8 justify-center items-center
+                `}
             >
                 <Routes>
                     <Route path="/" element={<Navigate to="search" replace />} />
